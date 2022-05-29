@@ -23,6 +23,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
+    SourceFolder: '$(System.DefaultWokingDirectory)'
     Contents: '**/*.jar'
     TargetFolder: '$(build.artifactstagingdirectory)'
 
